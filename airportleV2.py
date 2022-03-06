@@ -97,8 +97,7 @@ while(not isDone):
     else:
         tempDataFrame = dataframe.copy()
         print(f"Code {code} is valid...!")
-        invalidLetters = input("Please input a list of letters that cannot be in the answer, separated by spaces").upper()  # Get input
-        invalidLetters = invalidLetters.split(" ")
+        invalidLetters = input("Please input a list of letters that cannot be in the answer").upper()
         if code[0] != '?':
             tempDataFrame = searchOnChar(tempDataFrame, code[0], 0)
         if code[1] != '?':
