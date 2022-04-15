@@ -69,7 +69,6 @@ print("Reading in files...")
 for filename in filenames:
     dataframe = pd.read_csv(filename, header = None, delimiter='"', names=columns)
 
-#dataframe["Code"] = dataframe["Code"].str[:-1] #Delete ) from end of string
 dataframe.sort_values("Code") #Sort values by code... does this do anything?
 
 print("Welcome to Airportle Solver Verison 3")
